@@ -34,18 +34,17 @@
         <p>Discover scenic viewpoints, historical sites, and natural wonders.</p>
     </div>
 
-    <!-- Search and Filters -->
-    <div class="explore-controls">
-        <input type="text" id="search-input" class="search-input" placeholder="Search destinations...">
-        
-        <div class="filter-bar">
-        <button class="filter-btn active" data-filter="All">All</button>
-        <button class="filter-btn" data-filter="Nature">Nature</button>
-        <button class="filter-btn" data-filter="Scenic Viewpoints">Scenic</button>
-        <button class="filter-btn" data-filter="History & Heritage">Heritage</button>
-        <button class="filter-btn" data-filter="Family Friendly">Family Friendly</button>
+        <!-- Search and Filter Controls -->
+        <div class="explorer-controls">
+          <input type="text" id="search-attractions" class="search-input" placeholder="Search destinations...">
+          
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="viewpoint">Viewpoints</button>
+            <button class="filter-btn" data-filter="heritage">Heritage</button>
+          </div>
         </div>
-    </div>
 
     <!-- Grid populated by JS -->
     <div class="grid grid-3" id="attractions-grid"></div>
