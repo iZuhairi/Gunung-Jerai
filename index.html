@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover Gunung Jerai, Kedah's premier nature tourism destination. Explore beautiful landscapes, waterfalls, and rich heritage.">
+<title>Jerai Escape - Modern Nature Tourism</title>
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="app-container">
+<!-- Navbar with translation hooks -->
+<nav class="navbar">
+    <a href="index.html" class="brand">
+    <span class="brand-icon">🍃</span> Jerai Escape
+    </a>
+    
+    <div class="nav-links">
+    <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+    <a href="attractions.html" data-i18n="nav.explore">Explore</a>
+    <a href="activity.html" data-i18n="nav.activities">Activities</a>
+    <a href="plan-trip.html" data-i18n="nav.plan">Plan Your Trip</a>
+    <a href="visitor-info.html" data-i18n="nav.info">Visitor Info</a>
+    
+    <div class="controls">
+        <button id="lang-toggle" class="btn-icon">BM</button>
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">🌓</button>
+    </div>
+    </div>
+
+    <button class="hamburger" aria-label="Menu">☰</button>
+</nav>
+
+<main>
+    <header class="hero">
+    <div class="hero-overlay"></div>
+    
+    <!-- Lazy loaded background plates -->
+    <div class="hero-bg-pane hero-pane-1" style="background-image: url('https://images.unsplash.com/photo-1542272201-b1ca555f8505?auto=format&fit=crop&w=800&q=80');"></div>
+    <div class="hero-bg-pane hero-pane-2" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80');"></div>
+    <div class="hero-bg-pane hero-pane-3" style="background-image: url('https://images.unsplash.com/photo-1432405972618-fc088ee40191?auto=format&fit=crop&w=800&q=80');"></div>
+    <div class="hero-bg-pane hero-pane-4" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');"></div>
+    <div class="hero-bg-pane hero-pane-5" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80');"></div>
+    <div class="hero-bg-pane hero-pane-6" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80');"></div>
+    <div class="hero-bg-pane hero-pane-7" style="background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80');"></div>
+
+    <div class="hero-content">
+        <div class="highlight-badge">
+        <span>✦</span> <span data-i18n="hero.badge">Kedah Natural Heritage — Peak Destination</span>
+        </div>
+        <h1>Escape to the Beauty of <br><span class="color-accent">Gunung Jerai</span></h1>
+        <p data-i18n="hero.desc">Discover breathtaking landscapes, historical wonders, and memorable experiences in the heart of Kedah.</p>
+        <div class="hero-buttons">
+        <a href="attractions.html" class="btn btn-primary" data-i18n="hero.btn_inspire">Get Inspired</a>
+        <a href="plan-trip.html" class="btn btn-secondary" data-i18n="hero.btn_plan">Start Planning</a>
+        </div>
+
+        <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <span>🖱️</span>
+        </div>
+    </div>
+    </header>
+
+    <section class="section">
+    <div class="section-header">
+        <h2>Featured Destinations</h2>
+        <p>Explore must-visit natural sights waiting for you at the peak.</p>
+    </div>
+    
+    <div class="grid grid-3">
+        <article class="card">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542272201-b1ca555f8505?auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="card-content">
+            <span class="badge">Nature</span>
+            <h3>Botanical Park</h3>
+            <p>Wander through high-elevation gardens, vibrant orchids, and peaceful walking trails enveloped in misty cool breezes.</p>
+            <div class="card-footer">
+            <a href="attractions.html" class="link-arrow">Discover More →</a>
+            </div>
+        </div>
+        </article>
+        
+        <article class="card">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1432405972618-fc088ee40191?auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="card-content">
+            <span class="badge">Scenic Viewpoint</span>
+            <h3>Alur Naga Waterfall</h3>
+            <p>A tranquil, forest-hidden waterfall reachable via brief trails, ideal for deep natural refreshment.</p>
+            <div class="card-footer">
+            <a href="attractions.html" class="link-arrow">Discover More →</a>
+            </div>
+        </div>
+        </article>
+        
+        <article class="card">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="card-content">
+            <span class="badge">History & Heritage</span>
+            <h3>Padang Tok Sheikh</h3>
+            <p>A majestic limestone clearing connected to the ancient history of Islamic heritage in Kedah.</p>
+            <div class="card-footer">
+            <a href="attractions.html" class="link-arrow">Discover More →</a>
+            </div>
+        </div>
+        </article>
+    </div>
+    </section>
+
+    <section class="section bg-dark-accent">
+    <div class="section-header">
+        <h2>Why Visit Gunung Jerai?</h2>
+        <p>Unwind in the pristine highland heritage of northern Malaysia.</p>
+    </div>
+    <div class="grid grid-3 text-center features">
+        <div class="feature-item">
+        <div class="feature-icon">🏔️</div>
+        <h3>Cool Climate</h3>
+        <p>Leave lowland heat behind. Unwind in crisp, refreshing temperatures averaging 19°C to 24°C year-round.</p>
+        </div>
+        <div class="feature-item">
+        <div class="feature-icon">👁️</div>
+        <h3>Unrivaled Panoramas</h3>
+        <p>Witness the spectacular canvas of coastal paddy plains, the Malacca Strait, and distant islands from 1,200m above.</p>
+        </div>
+        <div class="feature-item">
+        <div class="feature-icon">🌿</div>
+        <h3>Ancient Ecosystems</h3>
+        <p>Trek among distinctive high-altitude flora, giant ferns, and historic geological footprints unique to this range.</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="section">
+    <div class="section-header">
+        <h2>Popular Experiences</h2>
+        <p>Immerse yourself in active exploration or peaceful leisure.</p>
+    </div>
+    <div class="grid grid-2">
+        <div class="activity-card" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80');">
+        <div class="activity-info">
+            <h3>Jungle Trekking</h3>
+            <p>Engage with diverse trail difficulties guided by naturalists.</p>
+            <a href="activity.html" class="btn btn-secondary" style="margin-top: 1rem;">View Details</a>
+        </div>
+        </div>
+        <div class="activity-card" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80');">
+        <div class="activity-info">
+            <h3>Highland Sightseeing</h3>
+            <p>Capture spectacular landscapes and sunsets from historical vantage points.</p>
+            <a href="activity.html" class="btn btn-secondary" style="margin-top: 1rem;">Explore Spots</a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section cta-banner text-center">
+    <h2>Ready to Experience Gunung Jerai?</h2>
+    <p>Outline your expenses and design a perfect custom travel itinerary seamlessly.</p>
+    <div class="hero-buttons justify-center" style="margin-top: 2rem;">
+        <a href="plan-trip.html" class="btn btn-primary" data-i18n="hero.btn_plan">Plan Your Trip</a>
+    </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+    <div class="footer-section">
+        <h4>🍃 Jerai Escape</h4>
+        <p>Discover the View. Embrace the Journey.</p>
+    </div>
+    <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="attractions.html" data-i18n="nav.explore">Explore Destinations</a>
+        <a href="activity.html" data-i18n="nav.activities">Activities & Tours</a>
+        <a href="plan-trip.html" data-i18n="nav.plan">Trip Planner & Budget</a>
+    </div>
+    <div class="footer-section">
+        <h4>Visitor Tips</h4>
+        <a href="visitor-info.html">Safety & Preparation</a>
+        <a href="visitor-info.html">Getting Here</a>
+        <a href="visitor-info.html#contact">Contact</a>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2026 Jerai Escape. Designed as an educational prototype. Estimates only.</p>
+    </div>
+</footer>
+
+</div> 
+
+<!-- MUST BE LOADED IN THIS ORDER -->
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

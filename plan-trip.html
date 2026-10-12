@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan Your Trip - Jerai Escape</title>
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="app-container">
+<nav class="navbar">
+    <a href="index.html" class="brand"><span class="brand-icon">🍃</span> Jerai Escape</a>
+    <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="attractions.html">Explore</a>
+    <a href="activity.html">Activities</a>
+    <a href="plan-trip.html" class="active">Plan Your Trip</a>
+    <a href="visitor-info.html">Visitor Info</a>
+    <div class="controls">
+        <button id="lang-toggle" class="btn-icon">BM</button>
+        <button id="theme-toggle" class="btn-icon">🌓</button>
+    </div>
+    </div>
+    <button class="hamburger">☰</button>
+</nav>
+
+<main>
+    <section class="section header-section text-center">
+    <h1>Design Your Escape</h1>
+    <p>Build your itinerary and estimate your expenses for a perfect trip.</p>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+    <div class="grid grid-2">
+        
+        <!-- Itinerary Builder -->
+        <div class="card" style="padding: 2rem; border-radius: var(--border-radius);">
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Itinerary Builder</h2>
+        
+        <div class="form-group" style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <select id="destination-select" class="form-control" style="flex-grow: 1;">
+            <option value="" disabled selected>Select a destination...</option>
+            <!-- Populated by JS -->
+            </select>
+            <button id="add-destination-btn" class="btn btn-primary">Add</button>
+        </div>
+
+        <div id="itinerary-list" class="itinerary-list">
+            <!-- Populated by JS -->
+        </div>
+
+        <div style="margin-top: 2rem; text-align: right;">
+            <button id="clear-itinerary-btn" class="btn btn-secondary">Clear All</button>
+        </div>
+        </div>
+
+        <!-- Budget Calculator -->
+        <div class="card" style="padding: 2rem; border-radius: var(--border-radius); background-color: var(--bg-primary);">
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Budget Estimator</h2>
+        
+        <form id="budget-form" class="budget-form">
+            <div class="grid grid-2" style="gap: 1rem; margin-bottom: 1rem;">
+            <div class="form-group">
+                <label for="adults">Adults</label>
+                <input type="number" id="adults" class="form-control" min="1" value="2">
+            </div>
+            <div class="form-group">
+                <label for="children">Children</label>
+                <input type="number" id="children" class="form-control" min="0" value="0">
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="transport">Transportation (RM)</label>
+            <input type="number" id="transport" class="form-control" min="0" placeholder="e.g. 50">
+            </div>
+            
+            <div class="form-group">
+            <label for="food">Food & Drink (RM)</label>
+            <input type="number" id="food" class="form-control" min="0" placeholder="e.g. 100">
+            </div>
+            
+            <div class="form-group">
+            <label for="accommodation">Accommodation (RM)</label>
+            <input type="number" id="accommodation" class="form-control" min="0" placeholder="e.g. 250">
+            </div>
+            
+            <div class="form-group">
+            <label for="activities">Activities & Fees (RM)</label>
+            <input type="number" id="activities" class="form-control" min="0" placeholder="e.g. 80">
+            </div>
+        </form>
+
+        <div class="budget-summary text-center" style="margin-top: 2rem; padding: 2rem; border-radius: var(--border-radius); background: rgba(62, 176, 96, 0.1); border: 1px solid rgba(62, 176, 96, 0.3);">
+            <h3 style="color: var(--text-secondary); font-size: 1rem; font-family: 'Inter', sans-serif; text-transform: uppercase;">Estimated Total</h3>
+            <div id="budget-total" style="font-size: 3rem; font-weight: 700; color: var(--accent-color); font-family: 'Playfair Display', serif; line-height: 1.2;">RM 0.00</div>
+            <div id="budget-per-person" style="color: var(--text-secondary); margin-top: 0.5rem;">RM 0.00 / person</div>
+        </div>
+        
+        <p style="font-size: 0.75rem; color: var(--text-secondary); text-align: center; margin-top: 1rem;">* This is an estimate for planning purposes only and does not constitute a confirmed quotation.</p>
+        </div>
+
+    </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+    <p>&copy; 2026 Jerai Escape. Designed as an educational prototype.</p>
+    </div>
+</footer>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+<script src="js/budget.js"></script>
+</body>
+</html>

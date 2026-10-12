@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visitor Info - Jerai Escape</title>
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="app-container">
+<!-- Navbar with data-i18n tags -->
+<nav class="navbar">
+    <a href="index.html" class="brand"><span class="brand-icon">🍃</span> Jerai Escape</a>
+    <div class="nav-links">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="attractions.html" data-i18n="nav.explore">Explore</a>
+    <a href="activity.html" data-i18n="nav.activities">Activities</a>
+    <a href="plan-trip.html" data-i18n="nav.plan">Plan Your Trip</a>
+    <a href="visitor-info.html" class="active" data-i18n="nav.info">Visitor Info</a>
+    <div class="controls">
+        <button id="lang-toggle" class="btn-icon">BM</button>
+        <button id="theme-toggle" class="btn-icon">🌓</button>
+    </div>
+    </div>
+    <button class="hamburger">☰</button>
+</nav>
+
+<main>
+    <section class="section header-section text-center">
+    <h1 data-i18n="info.title">Visitor Information</h1>
+    <p data-i18n="info.subtitle">Everything you need to know for a safe and memorable journey.</p>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+    <div class="grid grid-2">
+        
+        <!-- Getting Here -->
+        <div class="card" style="padding: 2.5rem; border-radius: var(--border-radius);">
+        <div class="feature-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🚗</div>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="info.getting_here">Getting Here</h2>
+        <p data-i18n="info.getting_here_desc">Gunung Jerai is accessible via the North-South Expressway. Exit at Gurun and follow the winding 13km mountain road to the peak.</p>
+        
+        <div style="margin-top: 2rem; background: var(--bg-primary); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color); text-align: center;">
+            <small style="color: var(--text-secondary); display: block; margin-bottom: 0.5rem;">GPS Coordinates</small>
+            <code style="color: var(--accent-color); font-size: 1.1rem;">5.7950° N, 100.4347° E</code>
+        </div>
+        </div>
+
+        <!-- Safety -->
+        <div class="card" style="padding: 2.5rem; border-radius: var(--border-radius); background-color: var(--bg-primary);">
+        <div class="feature-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🎒</div>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="info.safety">Safety & Preparation</h2>
+        <ul class="info-list">
+            <li data-i18n="info.safety_1">Wear appropriate gripped footwear for trails.</li>
+            <li data-i18n="info.safety_2">Check weather conditions; roads can be slippery when wet.</li>
+            <li data-i18n="info.safety_3">Engage registered guides for deep jungle trekking.</li>
+            <li>Bring a light jacket; evening temperatures drop significantly.</li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- FAQs & Contact -->
+    <div class="grid grid-2" style="margin-top: 1.5rem;">
+        <div class="card" style="padding: 2.5rem; border-radius: var(--border-radius); grid-column: span 2;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 2rem; text-align: center;" data-i18n="info.faq_title">Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+            <h4 class="faq-question">Do I need a permit to climb?</h4>
+            <p class="faq-answer">For standard tourist areas and botanical parks, no permit is needed. However, deep jungle trekking requires permission from the Forestry Department.</p>
+            </div>
+            <div class="faq-item">
+            <h4 class="faq-question">Are there dining facilities at the peak?</h4>
+            <p class="faq-answer">Yes, there are cafes and a resort restaurant available, though bringing your own water and light snacks is recommended.</p>
+            </div>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 3rem 0;">
+
+        <div class="text-center" id="contact">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="info.contact">Contact & Emergency</h2>
+            <p data-i18n="info.contact_desc" style="max-width: 600px; margin: 0 auto 1.5rem;">For official inquiries, contact the local forestry department or your respective resort operators.</p>
+            <a href="#" class="btn btn-secondary">Kedah Forestry Department</a>
+        </div>
+        </div>
+    </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+    <p>&copy; 2026 Jerai Escape. Designed as an educational prototype.</p>
+    </div>
+</footer>
+</div>
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

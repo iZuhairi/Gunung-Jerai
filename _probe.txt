@@ -1,0 +1,4 @@
+﻿BYTES=2582
+CONTAINS_AT_IMPORT=False
+CONTAINS_document_ADD_EVENT=True
+LINE1=document.addEventListener('DOMContentLoaded', () => {

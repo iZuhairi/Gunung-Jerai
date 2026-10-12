@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore - Jerai Escape</title>
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="app-container">
+<nav class="navbar">
+    <a href="index.html" class="brand"><span class="brand-icon">🍃</span> Jerai Escape</a>
+    <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="attractions.html" class="active">Explore</a>
+    <a href="activity.html">Activities</a>
+    <a href="plan-trip.html">Plan Your Trip</a>
+    <a href="visitor-info.html">Visitor Info</a>
+    <div class="controls">
+        <button id="lang-toggle" class="btn-icon">BM</button>
+        <button id="theme-toggle" class="btn-icon">🌓</button>
+    </div>
+    </div>
+    <button class="hamburger">☰</button>
+</nav>
+
+<main>
+    <section class="section" style="padding-top: 4rem;">
+    <div class="section-header">
+        <h1>Explore Gunung Jerai</h1>
+        <p>Discover scenic viewpoints, historical sites, and natural wonders.</p>
+    </div>
+
+    <!-- Search and Filters -->
+    <div class="explore-controls">
+        <input type="text" id="search-input" class="search-input" placeholder="Search destinations...">
+        
+        <div class="filter-bar">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="Nature">Nature</button>
+        <button class="filter-btn" data-filter="Scenic Viewpoints">Scenic</button>
+        <button class="filter-btn" data-filter="History & Heritage">Heritage</button>
+        <button class="filter-btn" data-filter="Family Friendly">Family Friendly</button>
+        </div>
+    </div>
+
+    <!-- Grid populated by JS -->
+    <div class="grid grid-3" id="attractions-grid"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+    <div class="footer-section">
+        <h4>🍃 Jerai Escape</h4>
+        <p>Discover the View. Embrace the Journey.</p>
+    </div>
+    <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="attractions.html">Explore Destinations</a>
+        <a href="plan-trip.html">Trip Planner</a>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2026 Jerai Escape. Designed as an educational prototype.</p>
+    </div>
+</footer>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/attractions.js"></script>
+</body>
+</html>

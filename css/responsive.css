@@ -1,0 +1,117 @@
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+.hero-content h1 {
+font-size: 3.2rem;
+}
+}
+
+@media (max-width: 992px) {
+body {
+padding: 12px; /* Slim outer wrap on tablets */
+}
+
+.app-container {
+border-radius: 20px;
+}
+
+.hero {
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+min-height: auto;
+}
+
+.hero-pane-1 { grid-column: 1 / 3; grid-row: 1 / 2; }
+.hero-pane-2, .hero-pane-3, .hero-pane-4, 
+.hero-pane-5, .hero-pane-6, .hero-pane-7 {
+display: none; /* Simplify image background grids on tablets */
+}
+
+.hero-content {
+grid-column: 1 / 3;
+grid-row: 1 / 5;
+padding: 4rem 1.5rem;
+}
+
+.grid-3 {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+body {
+padding: 0; /* Remove outer margin on mobile to utilize canvas fully */
+}
+
+.app-container {
+border-radius: 0;
+border: none;
+}
+
+.navbar {
+padding: 1rem 1.5rem;
+}
+
+.nav-links {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: rgba(10, 19, 14, 0.98);
+backdrop-filter: blur(20px);
+padding: 2rem 0;
+border-bottom: 1px solid var(--border-color);
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.nav-links a {
+padding: 0.75rem 2rem;
+width: 100%;
+text-align: left;
+font-size: 1rem;
+}
+
+.controls {
+padding: 0.75rem 2rem;
+width: 100%;
+justify-content: flex-start;
+}
+
+.hamburger {
+display: block;
+}
+
+.hero-content h1 {
+font-size: 2.2rem;
+}
+
+.hero-buttons {
+flex-direction: column;
+width: 100%;
+}
+
+.btn {
+width: 100%;
+}
+
+.grid-3, .grid-2 {
+grid-template-columns: 1fr;
+}
+
+.section {
+padding: 4rem 1.5rem;
+}
+
+.section-header h2 {
+font-size: 2rem;
+}
+
+.cta-banner {
+margin: 2rem 1rem;
+padding: 2rem 1.5rem;
+}
+}

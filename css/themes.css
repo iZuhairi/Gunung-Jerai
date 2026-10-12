@@ -1,0 +1,52 @@
+:root {
+/* Sage outer backdrop */
+--outer-bg: #5E6C5C; 
+
+/* Natural Dark Theme (Inspired by Pura Vida) */
+--bg-primary: #0A130E; /* Deep forest night */
+--bg-secondary: #132219; /* Jungle dark */
+--text-primary: #F4F6F4; /* Soft warm ivory */
+--text-secondary: #92A495; /* Muted natural sage */
+
+--primary-color: #3EB060; /* Vibrant leaf green */
+--primary-dark: #226437; /* Forest green shade */
+--accent-color: #2ECC71; /* Highlighting */
+--accent-light: #A8BDA0; /* Soft Sage Green */
+--accent-gold: #D3AD69; /* Warm historic highlight */
+
+--nav-bg: rgba(15, 24, 19, 0.45); /* Highly translucent glass */
+--footer-bg: #070B08;
+--footer-text: #92A495;
+
+--border-radius: 20px;
+--transition-speed: 0.3s;
+
+--border-color: rgba(255, 255, 255, 0.06);
+--glass-border: rgba(255, 255, 255, 0.08);
+--shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+--shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] {
+/* Warm Earthy Light Mode Alternative */
+--outer-bg: #A3B19B; 
+--bg-primary: #F4F1E6; /* Warm sand/cream */
+--bg-secondary: #E8E5D7; /* Muted linen */
+--text-primary: #1C2720; /* Deep foliage charcoal */
+--text-secondary: #5C695E; /* Forest sage shadow */
+
+--primary-color: #1F5132; /* Rich dark leaf */
+--primary-dark: #0D2616;
+--accent-color: #2D8B4E; 
+--accent-light: #7B8F77;
+--accent-gold: #B38E3F;
+
+--nav-bg: rgba(244, 241, 230, 0.7);
+--footer-bg: #1C2720;
+--footer-text: #E8E5D7;
+
+--border-color: rgba(28, 39, 32, 0.08);
+--glass-border: rgba(28, 39, 32, 0.12);
+--shadow-sm: 0 2px 8px rgba(28, 39, 32, 0.06);
+--shadow-md: 0 4px 16px rgba(28, 39, 32, 0.1);
+}
