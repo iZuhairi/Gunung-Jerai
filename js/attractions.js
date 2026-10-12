@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function filterData() {
     const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
     
-    // Check which filter button is active
+    // Check which filter button is active dan tukar nilainya ke huruf kecil (.toLowerCase)
     const activeBtn = document.querySelector('.filter-btn.active');
-    const activeFilter = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+    const activeFilter = activeBtn ? activeBtn.getAttribute('data-filter').toLowerCase() : 'all';
 
     const filtered = attractionsData.filter(item => {
       const matchesSearch = item.name.toLowerCase().includes(searchTerm) || item.description.toLowerCase().includes(searchTerm);
