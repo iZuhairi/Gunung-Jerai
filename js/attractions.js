@@ -4,7 +4,7 @@ const attractionsData = [
     name: "Gunung Jerai Botanical Park",
     category: "nature",
     description: "Wander through high-elevation gardens featuring vibrant orchids, pitcher plants, and peaceful walking trails.",
-    image: "assets/images/GunungJeraiBotanicalPark.jpeg", // Ditukar kepada gambar tempatan
+    image: "assets/images/GunungJeraiBotanicalPark.jpg", // Ditukar kepada gambar tempatan
     price: "Free entry",
     operatingHours: "8:00 AM - 6:00 PM"
   },
