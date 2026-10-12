@@ -4,16 +4,16 @@ const attractionsData = [
     name: "Gunung Jerai Botanical Park",
     category: "nature",
     description: "Wander through high-elevation gardens featuring vibrant orchids, pitcher plants, and peaceful walking trails.",
-    image: "assets/images/GunungJeraiBotanicalPark.jpg", // Ditukar kepada gambar tempatan
+    image: "assets/images/GunungJeraiBotanicalPark.jpg", 
     price: "Free entry",
     operatingHours: "8:00 AM - 6:00 PM"
   },
   {
     id: 2,
     name: "Alur Naga Waterfall",
-    category: "nature",
+    category: "nature", // Alur Naga kategori nature
     description: "A tranquil, forest-hidden waterfall reachable via a brief trek. Perfect for nature photography and cooling off.",
-    image: "assets/images/AirTerjunAlurNaga.jpeg", // Ditukar kepada gambar tempatan
+    image: "assets/images/AirTerjunAlurNaga.jpeg", // Ejaan dipastikan .jpg
     price: "Free entry",
     operatingHours: "Daylight hours recommended"
   },
@@ -22,7 +22,7 @@ const attractionsData = [
     name: "Padang Tok Sheikh",
     category: "heritage",
     description: "A majestic limestone clearing connected to the ancient history of Islamic heritage in Kedah.",
-    image: "assets/images/PadangTokSheikh.jpeg", // Ditukar kepada gambar tempatan
+    image: "assets/images/PadangTokSheikh.jpeg", 
     price: "Free entry",
     operatingHours: "Open 24 hours"
   },
@@ -31,16 +31,16 @@ const attractionsData = [
     name: "Telaga Tok Sheikh",
     category: "heritage",
     description: "A historical well believed to have been used by early scholars. The water is refreshingly cold year-round.",
-    image: "assets/images/TelagaTokSheikh.jpeg", // Ditukar kepada gambar tempatan
+    image: "assets/images/TelagaTokSheikh.jpeg", 
     price: "Free entry",
     operatingHours: "Open 24 hours"
   },
   {
     id: 5,
     name: "Peak Viewpoint",
-    category: "viewpoint",
+    category: "viewpoint", // Viewpoint
     description: "Experience breathtaking panoramic views of the Malacca Strait and endless paddy fields.",
-    image: "assets/images/PeakViewpoint.jpeg", // Ditukar kepada gambar tempatan
+    image: "assets/images/PeakViewpoint.jpeg", 
     price: "Free entry",
     operatingHours: "Best at sunrise/sunset"
   }
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search-attractions');
   const filterBtns = document.querySelectorAll('.filter-btn');
 
-  if (!grid) return; // Only run on attractions page
+  if (!grid) return; 
 
   function renderAttractions(data) {
     grid.innerHTML = '';
@@ -87,8 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function filterData() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+    const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+    
+    // Check which filter button is active
+    const activeBtn = document.querySelector('.filter-btn.active');
+    const activeFilter = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
 
     const filtered = attractionsData.filter(item => {
       const matchesSearch = item.name.toLowerCase().includes(searchTerm) || item.description.toLowerCase().includes(searchTerm);
@@ -100,15 +103,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Event Listeners
-  if (searchInput) searchInput.addEventListener('input', filterData);
+  if (searchInput) {
+    searchInput.addEventListener('input', filterData);
+  }
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      filterData();
+  if (filterBtns) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        e.target.classList.add('active');
+        // Trigger filter
+        filterData();
+      });
     });
-  });
+  }
 
   // Initial Render
   renderAttractions(attractionsData);
